@@ -1,0 +1,32 @@
+.advertisementImage{
+    height: 50vh;
+}
+.advertisementOverlaySlide {
+	position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+}
+.advertisementOverlaySlide:hover div {
+    transform: translate(0, 0);
+	transition: all 0.2s ease-in;
+}
+.advertisementOverlaySlide div {
+	position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    transform: translate(0, 100%);
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    text-align:center;
+    transition: all 0.2s ease-in;
+}
+.advertisementOverlaySlide h2 {
+	margin: 0;
+    font-size: 18px;
+    color: #eeeeee;
+}
+.advertisementOverlaySlide p {
+    font-size: 14px;
+    color: #dddddd;
+}
