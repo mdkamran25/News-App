@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Categories />
+      <div className='d-none d-md-block'><Categories /></div>
       <BodyWrapper />
     </div>
   );

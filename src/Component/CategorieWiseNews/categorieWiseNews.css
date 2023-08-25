@@ -1,0 +1,23 @@
+.custom-hr {
+    height: 5px; /* Set the height of the line */
+    background-color: rgb(0, 0, 0); /* Set the line color */
+    border: none; /* Remove border */
+    margin: 0px;
+    padding: 0px; 
+  }
+  .homePageCategoriewiseNewsDescription{
+    
+  }
+  .categorieWiseNewsCustomHeight{
+    height: 27rem;
+    overflow-y: hidden;
+  }
+
+  .homePageCategoriewiseNewsDescription p{
+      margin-bottom: 0px;
+      text-align: justify !important;
+      height: 80px;
+      overflow-y: hidden;
+      text-overflow: ellipsis;
+      
+  }

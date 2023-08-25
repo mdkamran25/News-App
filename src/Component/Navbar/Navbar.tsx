@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import SearchBar from "../SearchBar/searchBar";
 function Navbar() {
   return (
     <>
@@ -8,14 +9,8 @@ function Navbar() {
           <a className="navbar-brand" href="#">
             News App
           </a>
-          <ul className="navbar-nav d-none d-md-flex flex-row ms-auto">
-            <li className="nav-item">Sports</li>
-            <li className="nav-item">Weather</li>
-            <li className="nav-item">Technology</li>
-            <li className="nav-item">Trade</li>
-          </ul>
           <button
-            className="navbar-toggler d-block d-sm-none"
+            className="navbar-toggler d-block d-md-none"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
@@ -80,6 +75,9 @@ function Navbar() {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className="d-flex justify-content-end mt-2 mt-md-0 col-12 col-md-6 ms-auto">
+            <SearchBar />
           </div>
         </div>
       </nav>

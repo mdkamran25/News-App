@@ -1,0 +1,14 @@
+select{
+    width: 90%;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+select::after{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+select:focus {
+    outline: none; /* Remove focus outline */
+  }

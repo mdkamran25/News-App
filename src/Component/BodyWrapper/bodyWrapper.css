@@ -1,3 +1,9 @@
 .advetisementHeight{
     height: 50vh;
 }
+.categoriesWiseNewsWrapper{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 32rem;
+}
