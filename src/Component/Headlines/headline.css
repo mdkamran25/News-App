@@ -1,13 +1,32 @@
-.carouselHeight{
-    height: 50vh !important;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Raleway:ital,wght@1,300&family=Wix+Madefor+Display:wght@500;600&display=swap");
+.carouselHeight {
+  height: 50vh !important;
 }
-.carouselDescription{
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-    left: 0;
+.topHeadlines {
+  position: absolute;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  left: 0;
+  top: 0;
+  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
+}
+.carouselDescription {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.8); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  left: 0;
+  height: 125px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.headlineContentLink:hover {
+  text-decoration: underline;
+  color: blue !important;
 }

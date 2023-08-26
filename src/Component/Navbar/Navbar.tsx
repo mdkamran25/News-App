@@ -1,13 +1,14 @@
 import React from "react";
 import "./Navbar.css";
 import SearchBar from "../SearchBar/searchBar";
+import NewsLogo from '../../assets/Newsly.jpg'
 function Navbar() {
   return (
     <>
       <nav className="navbar navbar-dark text-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            News App
+            <img src={NewsLogo} alt="App Logo" width={150} height={40} />
           </a>
           <button
             className="navbar-toggler d-block d-md-none"

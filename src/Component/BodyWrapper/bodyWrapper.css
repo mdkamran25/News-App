@@ -3,7 +3,7 @@
 }
 .categoriesWiseNewsWrapper{
     background-color: white;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 15px;
     height: 32rem;
 }

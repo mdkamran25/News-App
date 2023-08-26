@@ -5,7 +5,7 @@ const Advertisement = () => {
     return (
         <div>
             <div className='advertisementOverlaySlide position-relative ps-1'>
-                <img className='w-100 advertisementImage'  src={advertisementImage} alt='Advertisement' />
+                <img className='advertisementImage'  src={advertisementImage} alt='Advertisement' />
                 <div>
                     <h2>Advetisement Section</h2>
                     <p>This section is only for advertisement purpose.</p>

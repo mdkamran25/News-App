@@ -37,7 +37,7 @@ const CategoriesWiseNews: React.FC<categorieProps> = (props) => {
   const text =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quia odio amet atque velit temporibus quae exercitationem nemo saepe ex cum, vel minus facere accusamus. Ea sapiente nobis sed pariatur.';
 
-  const [isTruncated, setIsTruncated] = React.useState(true);
+  const [isTruncated, setIsTruncated] = React.useState(false);
 
   const toggleTruncate = () => {
     setIsTruncated(!isTruncated);
@@ -59,17 +59,15 @@ const CategoriesWiseNews: React.FC<categorieProps> = (props) => {
         {data && data.articles.map((article: Article, index: number) => (
           <React.Fragment key={index}>
             <div className='row g-0 p-2'>
-              <div className='col-2'>
+              <div className='col-3 col-md-2'>
                 <img className='float-start ps-1' src={article.urlToImage ? article.urlToImage : advertisement} width={60} height={80} alt='News image' />
               </div>
               <div className='col-9 homePageCategoriewiseNewsDescription'>
-                <p className={`text-start ${isTruncated ? 'truncate-text' : ''}`}>
-                  {isTruncated ? `${article.title.slice(0, 80)}...` : article.title}
-                  {isTruncated && (
-                    <a href={article.url} onClick={toggleTruncate}>
+                <p className={`text-start isTruncateP`}>
+                  {article.title}
+                    <a href={article.url}>
                       Read more
                     </a>
-                  )}
                 </p>
               </div>
             </div>
@@ -79,7 +77,7 @@ const CategoriesWiseNews: React.FC<categorieProps> = (props) => {
       </div>
       <div className='col-12'>
         <hr className='mt-0 mb-1' />
-        <a href='#'>Read More &rarr;</a>
+        <a className='text-decoration-none' href='#'>Read More &rarr;</a>
       </div>
     </div>
   )

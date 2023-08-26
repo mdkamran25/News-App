@@ -8,6 +8,10 @@
   .homePageCategoriewiseNewsDescription{
     
   }
+  /* .isTruncateP{
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
   .categorieWiseNewsCustomHeight{
     height: 27rem;
     overflow-y: hidden;
@@ -17,7 +21,7 @@
       margin-bottom: 0px;
       text-align: justify !important;
       height: 80px;
-      overflow-y: hidden;
+      overflow: hidden;
       text-overflow: ellipsis;
       
   }
